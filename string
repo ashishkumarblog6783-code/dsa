@@ -1,0 +1,15 @@
+name='ashish'
+room="a"
+address="banglore,karnatka"
+intro="sab batana zaroori hai kya bhau"
+
+print(name,type(name))
+print(room,type(room))
+
+####operations#####
+print(len(name))
+print(name[-2])
+print(name.upper())
+
+rev=address[::-1]
+print(rev)
