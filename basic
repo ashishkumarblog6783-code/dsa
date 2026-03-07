@@ -1,0 +1,226 @@
+
+Open In Colab
+
+def helloworld(name):
+    print(name+ "babu")
+name="lopi"
+helloworld(name)
+     
+lopibabu
+
+def helloworld(name):
+    print(name + "babu")
+name = "ashish" # Changed 'name' to a string
+helloworld(name) # Calling the function with the string name
+     
+ashishbabu
+
+def sum(a,b):
+  print(a+b)
+a=4
+b=5
+sum(a,b)
+     
+9
+
+def sum(a,b):
+  print(a*b)
+a=4
+b=5
+sum(a,b)
+     
+20
+
+def square(x):
+  result=x*x
+  return result
+
+print(square(-5))
+     
+25
+
+age=int(input("enter your age"))
+if age>=18:
+  print("you are eligible for vote")
+else:
+  print("you are not eligible for vote")
+     
+enter your age12
+you are not eligible for vote
+
+number=int(input("enter the number you want to check"))
+if number/2==0:
+  print("number is even")
+else:
+  print("number is odd")
+     
+enter the number you want to check67
+number is odd
+
+for i in range(n,50):
+  n=int(input("enter the number"))
+
+     
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+/tmp/ipython-input-325180315.py in <cell line: 0>()
+----> 1 for i in range(n,50):
+      2   n=int
+      3   n=int(input("enter the number"))
+
+NameError: name 'n' is not defined
+
+word_to_print = "Hello"
+for i in range(5):
+    print(word_to_print)
+     
+Hello
+Hello
+Hello
+Hello
+Hello
+
+name="ashish"
+vowels = "aeiouAEIOU"
+has_vowel = False
+for char in name:
+    if char in vowels:
+        has_vowel = True
+        break
+
+if has_vowel:
+    print(name.upper())
+else:
+    print(name.lower())
+     
+ASHISH
+
+name="rajeev"
+vowels="aeiouAEIOU"
+
+modified_name = ""
+for char in name:
+  if char in vowels:
+    modified_name += char.upper()
+  else:
+    modified_name += char
+
+print(modified_name)
+
+     
+Ev
+
+name="hello world"
+for i in range(0,4):
+  print(f"{name} {i}")
+     
+hello world 0
+hello world 1
+hello world 2
+hello world 3
+
+for i in range(2, 9,3):
+  print(f"{i} ")
+     
+2 
+5 
+8 
+
+name="hello world"
+for i in range(5,0,-2):
+  print(f"{name},{i}")
+
+
+len(name)
+
+     
+hello world,5
+hello world,3
+hello world,1
+11
+
+#n=1,2,3,4,5,6,7,8,9
+for i in range(0,9,2):
+  print(i)
+     
+0
+2
+4
+6
+8
+
+i=7
+while i<=5:
+    print(i)
+    i+=1
+
+     
+
+arr=[2,4,6,8,9,0]
+if 2 in arr and  4 in arr and 6 in arr :
+ print( 0,5,7)
+
+else:
+  print(-1)
+     
+0 5 7
+
+arr=[2,-8,-7,8,9]
+negative_count=0
+for number in arr:
+  if number < 0:
+    negative_count+=1
+    print(number,{negative_count})
+     
+-8 {1}
+-7 {2}
+
+arr=[2,4,7,9,5,3]
+max(arr)
+     
+9
+
+arr=[1,4,6,7,9,-1]
+if not arr:
+  print("empty")
+elif len(arr)<2:
+  print("array must be at least two elements")
+else:
+  largest_num=float('-inf')
+  second_largest=float('-inf')
+  for number in arr:
+    if number>largest_num:
+      second_largest=largest_num
+      largest_num=number
+    elif number > second_largest and number!=largest_num:
+      second_largest=number
+
+  if second_largest==float('-inf'):
+    print("no distinct second largest number found")
+  else:
+    print(second_largest)
+     
+7
+
+number=[2,3,4,5,6,78]
+
+# Initialize largest and second to very small values
+largest = float('-inf')
+second = float('-inf')
+
+# Iterate through each element in the list 'number'
+for num_val in number: # Renamed loop variable to avoid conflict with list name
+    if num_val > largest:
+        second = largest
+        largest = num_val
+    elif num_val > second and num_val != largest:
+        second = num_val
+
+# After checking all numbers, print the second largest
+# Add checks for edge cases similar to the previous example
+if second == float('-inf'):
+    print("No distinct second largest number found (e.g., array too small or all elements are same)")
+else:
+    print(second)
+     
+6
