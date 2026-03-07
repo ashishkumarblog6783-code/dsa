@@ -1,0 +1,10 @@
+a=10
+b=20
+sum=a+b
+print(sum)
+
+
+firstname="ashish"
+lastname="yadav"
+fullname=firstname+lastname
+print(fullname)
