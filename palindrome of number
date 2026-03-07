@@ -1,0 +1,61 @@
+
+Open In Colab
+
+original_n = int(input("enter number"))
+n = original_n
+rev = 0
+while(n > 0):
+  rem = n % 10  # Correctly get the last digit
+  rev = (10 * rev) + rem
+  n = n // 10 # Use integer division to remove the last digit
+if(rev == original_n):
+    print("palindrome")
+else:
+    print("not a palindrome")
+     
+enter number888
+palindrome
+
+word="mam"
+if (word==word[::-1]):
+  print("palindrome")
+else:
+    print("not")
+
+     
+palindrome
+
+name=input("enter the word")
+name1=name
+if(name1==name1[::-1]):
+  print("print palindrome")
+else:
+  print("not")
+     
+enter the word121
+print palindrome
+
+original = int(input("enter the number"))
+num = original
+rev = 0
+while(num > 0):
+  rem = num % 10  # Get the last digit
+  rev = (rev * 10) + rem # Build the reversed number
+  num = num // 10 # Remove the last digit using integer division
+
+if(original == rev):
+  print("palindrome")
+else:
+  print("not a palindrome")
+     
+enter the number-898
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+/tmp/ipython-input-163722767.py in <cell line: 0>()
+----> 1 original = int(input("enter the number"))
+      2 num = original
+      3 rev = 0
+      4 while(num > 0):
+      5   rem = num % 10  # Get the last digit
+
+TypeError: 'str' object is not callable
