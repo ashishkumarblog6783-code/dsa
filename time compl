@@ -1,0 +1,26 @@
+L=[1,2,3,4,5]
+
+sum=0
+for i in L:
+    sum=sum+i
+    print(sum)
+product=1
+for i in L:
+    product=product*i
+print(product)
+
+############linear search#################3
+k
+def intStr(i):
+    digits = '0123456789'
+    if i==0:
+        return '0'
+    result=''
+    while i>0:
+        result=digits[i%10] + result
+        i=i//10
+        return result
+print(intStr(123))
+
+#########log#######
+
